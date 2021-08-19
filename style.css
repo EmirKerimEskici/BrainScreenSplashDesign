@@ -1,6 +1,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    font-family:'Raleway', sans-serif;
 }
 .header{
     background-color:#653592;
@@ -18,13 +19,11 @@ html,body{
 }
 .br-h4{
     color: #ffffff;
-    font-family: Raleway;
     font-size:large;
     margin-left: 25px;
 }
 .container ul li a{
     font-size: small;
-    font-family: Raleway;
     margin-left: 20px;
     color: #ffffff;
     font-style: normal;
@@ -57,7 +56,6 @@ html,body{
     object-fit: cover;
 }
 h3{
-    font-family: Raleway;
     font-weight: bold;
     font-size: 100px;
     line-height: 117px;
@@ -65,9 +63,176 @@ h3{
     color: #ffffff;
 }
 h4{
-    font-family: Raleway ;
     font-size: larger;
     color: #ffffff;
     position: relative;
     right: 10px;
+}
+.rectangle{
+    width: 100%;
+    height: auto;
+    background-color:rgba(220, 193, 245, 1) ; 
+}
+.call{
+    display: flex;
+    flex-direction: row;
+}
+p.call-p{
+    font-weight: 300px;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 250px;
+    align-items: flex-start;
+    margin-bottom: 65px;
+}
+.mini.text{
+    display: flex;
+    font-weight: 300px;
+    font-size: 14px;
+    font-style: normal;
+    color:rgba(0, 0, 0, 1) ;  
+    width: 90%;
+    height: -30px;
+    margin-right: 55px;
+    align-items: flex-end;
+}
+.info-box{
+    padding-top: 50px; 
+    display: flex;
+}
+h2{
+    text-align: center;
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 56px;
+}
+.info-content { 
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.info-box {
+    display: flex;
+    flex-direction: row;
+}
+.text-p { 
+    display: flex;
+   width: 70%;
+   margin-right: 20px;
+   color:#000000 ;
+   position: relative;
+   z-index: 8;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 19px;
+}
+.info-content{
+    margin-left: 150px;
+    margin-top: -50px;
+}
+div.build{
+    display: flex;
+    width: 30%;
+    height: auto;
+    padding: 0;
+    position: relative;
+    z-index: 7;
+}
+#elipse{
+    display: flex;
+   position: relative;
+   right: 555px;
+   bottom: -20px;
+   z-index: 5;
+}
+.elipse2{
+    display: flex;
+    position: absolute;
+    left: 710px;
+    top: 1159px;
+    z-index: 6;
+}
+.box-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logos .box-row li {
+    width: 250px;
+    width:calc(100% / 4);
+    height: 270px; 
+    list-style: none;
+    margin-left: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.logos .box-row p{
+    display: flex;
+    margin-right: 175px;
+    height: 50px;
+    margin-top: 50px;
+}
+.logos .box-row li h5{
+    color: #000000;
+    margin-left: -2px;
+    margin-bottom: -30px;
+    margin-top: -15px;
+    font-size: 20px;
+}
+.logos .box-row li div{
+    width: 100%;
+    margin-left: 30%;
+}
+.logos .box-row li div img{
+    padding: 25px;
+}
+.footer-main{
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.75);
+    }
+#b-ground img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.down{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+     margin-top: -650px;
+}
+.down div li{
+    display: flex;
+    list-style: none;
+}
+.bot-bar{
+    width: 100%;
+    background-color: rgba(101, 53, 146, 1);
+    height: auto;
+}
+.bot-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bot-container h4{
+    color: #ffff;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 56px;
+}
+.bot-container p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 65px;
 }
