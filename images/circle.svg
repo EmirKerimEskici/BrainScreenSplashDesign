@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 285" width="285" height="285">
+	<title>elipse-svg</title>
+	<defs>
+		<image width="224" height="224" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI0IiBoZWlnaHQ9IjIyNCIgdmlld0JveD0iMCAwIDIyNCAyMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8Y2lyY2xlIGN4PSIxMTIiIGN5PSIxMTIiIHI9IjExMiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg0K"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.431;fill: #653592 } 
+	</style>
+	<path id="Layer" class="shp0" d="M142.5 285C63.7 285 0 221.3 0 142.5C0 63.7 63.7 0 142.5 0C221.3 0 285 63.7 285 142.5C285 221.3 221.3 285 142.5 285Z" />
+	<use id="elipsewhite" href="#img1" transform="matrix(1,0,0,1,30,30)"/>
+</svg>

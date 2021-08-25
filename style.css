@@ -3,6 +3,9 @@ html,body{
     padding: 0;
     font-family:'Raleway', sans-serif;
 }
+*{
+    box-sizing: border-box;
+}
 .header{
     background-color:#653592;
     width: 100%;
@@ -12,6 +15,7 @@ html,body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .container ul li{
     list-style: none;
@@ -20,11 +24,11 @@ html,body{
 .br-h4{
     color: #ffffff;
     font-size:larger;
-    margin-left: 25px;
     font-size: 25px;
 }
 .container ul{
-    margin-top: 30px;
+  margin: 0;
+    padding: 0;
 }
 .container ul li a{
     font-size: small;
@@ -143,16 +147,19 @@ h2{
 .box-row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
+    width: 1140px;
+    margin: auto;
+    max-width: 100%;
+    padding: 15px;
 }
 .logos .box-row li {
     box-shadow: 3px 3px 3px 3px gray;
+    margin: 15px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 50px;
     flex-wrap: wrap;
-    width: calc(100% / 4);
+    width: calc((100% / 3) - 30px);
     text-align: justify;
 }
 .logos .box-row p{
@@ -167,8 +174,11 @@ h2{
     font-size: 20px;
 }
 .logos .box-row li div{
-    width: 100%;
-    margin-left: 30%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .logos .box-row li div img{
     padding: 25px;
@@ -214,4 +224,51 @@ h2{
     line-height: 20px;
     margin-top: 65px;
 }
-
+.mobile-menu-button{
+    display: none;
+}
+.mid-container{
+    background: url("images/circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .logos .box-row li{
+        width: calc(100% - 30px);
+        margin:0 0 15px 0;
+    }
+    .mid-p{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .mid-container{
+        display: block;
+    }
+    .info-img{
+        padding-top: 30px;
+    justify-content: center;
+    }
+    .header ul{
+        display: none;
+    }
+    .mobile-menu-button{
+        display: block;
+    }
+    .container-main .back h3{
+        font-size: 30px;
+    }
+    .call p{
+        display: none;
+    }
+    .call h2{
+        width:100%;
+    }
+    .rectangle{
+        justify-content: space-between;
+        padding: 0 30px;
+        background-color: rgba(196, 196, 196, 1);
+    }
+    .back-plan img{
+        max-width: 100%;
+}
+}
