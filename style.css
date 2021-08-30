@@ -63,6 +63,13 @@ html,body{
     width: 100%;
     object-fit: cover;
 }
+.container-main .back .altok img{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  opacity: 1;
+  margin-top: 50px;
+}
 h3{
     font-weight: bold;
     font-size: 100px;
@@ -270,5 +277,14 @@ h2{
     }
     .back-plan img{
         max-width: 100%;
-}
+    }
+    .container-main .back h3{
+        font-weight: 700px;
+        font-style: normal;
+        font-size: 64px;
+    }
+    .container-main .back h4{
+        position: relative;
+        bottom: 75px;
+    }
 }
