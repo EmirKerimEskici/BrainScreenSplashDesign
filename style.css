@@ -27,7 +27,7 @@ html,body{
     font-size: 25px;
 }
 .container ul{
-  margin: 0;
+    margin: 0;
     padding: 0;
 }
 .container ul li a{
@@ -51,14 +51,14 @@ html,body{
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background-color: rgba(101, 53, 146, 0.65);
+    background-color: rgb(99, 37, 153);
     height:calc(100vh  - 69px);
 }
 .back img{
     position: absolute;
     left: 0;
     top: 0;
-    opacity: .4;
+    opacity: 0.3;
     height: calc(100vh  - 69px);
     width: 100%;
     object-fit: cover;
@@ -99,15 +99,23 @@ h2{
     align-items: center;
     background-color:rgba(220, 193, 245, 1) ;
 }
-.button.button{
+.button{
     display: flex;
-    justify-content: flex-start;
+    width: 110px;
+    height: 39px;
     background-color:#653592; 
-    color: rgba(255, 255, 255, 1);
     border-radius:7px;
-    font-size: 22px;
     line-height: 28px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+}
+.button .button{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-left: 20px;
+    padding-top: 3px;
+    font-size: 15px;
 }
 .call{
     display: flex;
@@ -186,6 +194,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
 }
 .logos .box-row li div img{
     padding: 25px;
@@ -231,7 +240,12 @@ h2{
     line-height: 20px;
     margin-top: 65px;
 }
-.mobile-menu-button{
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
     display: none;
 }
 .mid-container{
@@ -258,8 +272,11 @@ h2{
     .header ul{
         display: none;
     }
-    .mobile-menu-button{
+    .hamburger{
         display: block;
+    }
+    .header ul.show{
+        display: flex;
     }
     .container-main .back h3{
         font-size: 30px;
