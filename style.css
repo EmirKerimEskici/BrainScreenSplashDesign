@@ -13,13 +13,15 @@ html,body{
 }
 .container{
     display: flex;
-    flex-direction: row;
+    
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 .container ul li{
     list-style: none;
     margin-top: 8px;
+    
 }
 .br-h4{
     color: #ffffff;
@@ -31,6 +33,7 @@ html,body{
     padding: 0;
 }
 .container ul li a{
+    display: inline-block;
     font-size: small;
     margin-left: 20px;
     color: #ffffff;
@@ -269,14 +272,42 @@ h2{
         padding-top: 30px;
     justify-content: center;
     }
-    .header ul{
+    .nav-ul{
         display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .br-h4{
+        margin-bottom: 15px;
+    }
+    .container ul li a{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .container ul li{
+        background-color:rgb(131, 92, 160);
+    }
+    .container ul li a:hover{
+        color: rgb(66, 2, 95);
+        border-bottom: solid 2px white;
+    }
+    .hamburger:hover
+    {
+        transform: rotateZ(-30deg);
     }
     .hamburger{
-        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-right: 25px;
+        font-size: 25px;
+        margin-bottom: 15px;
     }
     .header ul.show{
-        display: flex;
+        display: block;
     }
     .container-main .back h3{
         font-size: 30px;
